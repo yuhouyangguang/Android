@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellow"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/yellow"
+       android:gravity="center_horizontal"
+       android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rank1h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Choose Diffculty"
+            android:textSize="30dp"
+            tools:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/rank1"
+            android:layout_width="173dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="40dp"
+            android:background="#007FFF"
+            android:text="RANK1" />
+
+        <TextView
+            android:id="@+id/rank2h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/rank2"
+            android:layout_width="173dp"
+            android:layout_height="28dp"
+            android:background="#007FFF"
+            android:layout_marginTop="10dp"
+            android:text="RANK2" />
+
+        <TextView
+            android:id="@+id/rank3h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/rank3"
+            android:layout_width="173dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="#007FFF"
+            android:text="RANK3" />
+
+        <TextView
+            android:id="@+id/rank4h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/rank4"
+            android:layout_width="173dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="#007FFF"
+            android:text="RANK4" />
+
+        <TextView
+            android:id="@+id/rank5h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/rank5"
+            android:layout_width="173dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="#007FFF"
+            android:text="RANK5" />
+
+        <TextView
+            android:id="@+id/rank6h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+</RelativeLayout>

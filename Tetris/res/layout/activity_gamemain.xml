@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/tetrisView"
+            android:layout_width="210dp"
+            android:layout_height="357dp"
+            android:dividerHeight="0dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="10"
+            android:verticalSpacing="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/nextTetrisView"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center_horizontal"
+                android:dividerHeight="0dp"
+                android:horizontalSpacing="0dp"
+                android:numColumns="4"
+                android:verticalSpacing="0dp" >
+
+            </GridView>
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Score:"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Level:"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/level1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Speed："
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/speed1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/maxScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="MaxScore："
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/highest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/left_move"
+            android:text="move left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="wrap_content"
+            
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/rotate_move"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/box"
+            android:text="rotate"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/right_move"
+            android:text="move right"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/box"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+    <Button
+        android:text="move down"
+        android:id="@+id/down_move"
+        android:layout_width="match_parent"
+        android:background="@drawable/box"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"/>
+    <!--android:layout_gravity="bottom"-->
+    <Button
+
+        android:text="pause"
+        android:id="@+id/pause"
+        android:layout_width="match_parent"
+        android:background="@drawable/box"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"/>
+</LinearLayout>
